@@ -10,13 +10,12 @@ A modern, responsive personal portfolio built with **React** and **Tailwind CSS*
 ## 📸 Preview
 
 ### Portfolio – Main Sections
-![Portfolio Page 1](screenshots/page1.png)
+![Portfolio Page 1](screenshots/page1-v2.png)
 
 ### Projects & Blogs
-![Portfolio Page 2](screenshots/page2.png)
-
+![Portfolio Page 2](screenshots/page2-v2.png)
 ###  Blogs
-![Portfolio Page 2](screenshots/page3.png)
+![Portfolio Page 2](screenshots/page3-v2.png)
 ---
 
 ## ✨ Overview
