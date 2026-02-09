@@ -122,3 +122,24 @@ npm install
 
 # 4. Start the development server
 npm run dev
+```
+---
+## 👤 Author
+
+<div align="left">
+  <img src="https://github.com/Syed-Waheed.png" width="110" align="left" style="margin-right: 20px; border-radius: 50%;" alt="Syed Abdul Waheed" />
+
+  **Syed Abdul Waheed** *Data Science Enthusiast | Python Developer | Automation Explorer*
+
+  I am motivated and disciplined, focused on building concepts rather than memorizing syntax. I am actively working on strengthening my practical implementation skills in AI & ML.
+
+  <br />
+
+  <a href="https://www.linkedin.com/in/syed-abdul-waheed/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+  </a>
+  <a href="https://github.com/Syed-Waheed">
+    <img src="https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github" alt="GitHub" />
+  </a>
+</div>
+<br clear="left"/>
