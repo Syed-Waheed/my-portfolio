@@ -12,9 +12,9 @@ A modern, responsive personal portfolio built with **React** and **Tailwind CSS*
 ### Portfolio – Main Sections
 ![Portfolio Page 1](screenshots/page1-v2.png)
 
-### Projects & Blogs
+### About Me
 ![Portfolio Page 2](screenshots/page2-v2.png)
-###  Blogs
+###  Projects
 ![Portfolio Page 2](screenshots/page3-v2.png)
 ---
 
