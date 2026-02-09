@@ -1,134 +1,157 @@
 import React, { useEffect } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Typed from "typed.js";
-import "./styles/profileGlow.css";
+import "./styles/profileGlow.css"; 
 
+// Components
+import Header from "./components/Header.jsx"; 
 import Experience from "./components/Experience.jsx";
 import Education from "./components/Education.jsx";
 import Projects from "./components/Projects.jsx";
 import Footer from "./components/Footer.jsx";
-// import Blogs from "./pages/Blogs.jsx";
-import Blogs from "./pages/Blogs.jsx"; // 
+
+// Pages
+import Blogs from "./pages/Blogs.jsx"; 
 import BlogPost from "./pages/BlogPost.jsx";
+import SkillsAndCertifications from "./pages/SkillsAndCertifications.jsx"; 
 
 function HomePage() {
   useEffect(() => {
     const typed = new Typed("#element", {
       strings: [
-        "Web Developer",
-        "Tech Explorer 🚀",
-        "Software Enthusiast",
         "ML Engineer Enthusiast",
         "Data Science Enthusiast",
+        "Tech Explorer 🚀",
       ],
-      typeSpeed: 45,
-      backSpeed: 25,
+      typeSpeed: 50,
+      backSpeed: 30,
       backDelay: 1500,
       loop: true,
-      showCursor: false,
+      showCursor: false, 
     });
 
     return () => typed.destroy();
   }, []);
 
   return (
-    <main className="bg-[#000021] text-white font-poppins min-h-screen scroll-smooth snap-y snap-mandatory overflow-y-scroll h-screen">
-      {/* Navbar */}
-      <header className="sticky top-0 z-50 bg-[#12123e] shadow-md">
-        <nav className="flex justify-between items-center px-6 md:px-20 h-20">
-          <div className="text-xl font-light font-poppins">Waheed's Portfolio</div>
-          <ul className="flex gap-8 text-lg">
-            <li><a href="#home" className="hover:text-yellow-400">Home</a></li>
-            <li><a href="#about" className="hover:text-yellow-400">About</a></li>
-            <li><a href="#education" className="hover:text-yellow-400">Education</a></li>
-            <li><a href="#projects" className="hover:text-yellow-400">Projects</a></li>
-            <li><a href="#contact" className="hover:text-yellow-400">Contact</a></li>
-            <li><Link to="/blogs" className="hover:text-yellow-400">Blogs</Link></li>
-          </ul>
-        </nav>
-      </header>
+    // FIX: Removed 'overflow-hidden' from here so Sticky Header works again
+    <main className="bg-[#000021] text-white font-poppins min-h-screen selection:bg-yellow-400 selection:text-black">
+      
+      {/* --- AMBIENT BACKGROUND GLOWS (Fixed Position) --- */}
+      {/* This container handles the overflow so the main page stays scrollable */}
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px]" />
+        <div className="absolute bottom-[10%] right-[-5%] w-[400px] h-[400px] bg-blue-900/20 rounded-full blur-[120px]" />
+      </div>
 
-      {/* Hero Section */}
-      <section
-        id="home"
-        className="flex flex-col md:flex-row justify-center items-center px-6 md:px-12 gap-16 snap-start min-h-[85vh]"
-      >
-        {/* Left Text */}
-        <div className="md:w-1/2 text-[2.2rem] leading-relaxed">
-          <p>Hi, My name is</p>
-          <p className="text-yellow-400 font-normal">Waheed</p>
-          <p>and I am a passionate</p>
-          <span
-            id="element"
-            className="text-yellow-400 transition-all duration-500 ease-in-out"
-          ></span>
+      {/* --- MAIN CONTENT --- */}
+      <div className="relative z-10">
+        
+        {/* Header will now stick because the parent doesn't hide overflow */}
+        <Header />
 
-          <div className="mt-10 flex flex-wrap gap-4 text-lg">
-            <a
-              href="/MYRESUME.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white px-6 py-3 rounded-md hover:bg-blue-950 transition-all"
-            >
-              View Resume
-            </a>
-            <a
-              href="https://github.com/waheed24-03"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white px-6 py-3 rounded-md hover:bg-blue-950 transition-all"
-            >
-              Visit GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/syed-waheed-298b782a7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border-2 border-white px-6 py-3 rounded-md hover:bg-blue-950 transition-all"
-            >
-              LinkedIn Profile
-            </a>
+        {/* --- HERO SECTION --- */}
+        <section
+          id="home"
+          className="flex flex-col md:flex-row justify-center items-center px-6 md:px-16 gap-12 md:gap-24 min-h-[90vh]"
+        >
+          {/* Left Text */}
+          <div className="md:w-1/2 flex flex-col items-start space-y-4 z-10">
+            <p className="text-xl text-yellow-400 font-mono tracking-wide">Hello, world!</p>
+            
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-500 to-orange-500">Waheed</span>
+            </h1>
+            
+            <div className="text-2xl md:text-3xl font-light text-gray-300 h-[60px] flex items-center">
+              <span>I am a&nbsp;</span>
+              <span id="element" className="text-white font-semibold"></span>
+            </div>
+
+            <p className="text-gray-400 max-w-lg text-lg leading-relaxed mt-4">
+              Turning data into insights and code into reality. Passionate about building intelligent systems and solving real-world problems.
+            </p>
+
+            {/* --- BUTTONS SECTION --- */}
+            <div className="mt-10 flex flex-wrap gap-4">
+              {/* 1. Resume */}
+              <a
+                href="/Waheed_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 rounded-full bg-yellow-400 text-[#000021] font-bold text-lg hover:bg-yellow-300 hover:scale-105 transition-all duration-300 shadow-lg shadow-yellow-400/20"
+              >
+                Download CV
+              </a>
+
+              {/* 2. LinkedIn (Added Back) */}
+              <a
+                href="https://www.linkedin.com/in/syed-abdul-waheed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 rounded-full bg-[#0077B5]/10 border border-[#0077B5]/50 text-white font-medium text-lg hover:bg-[#0077B5] hover:border-[#0077B5] transition-all duration-300"
+              >
+                LinkedIn
+              </a>
+
+              {/* 3. GitHub */}
+              <a
+                href="https://github.com/Syed-Waheed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-3 rounded-full bg-transparent border border-gray-600 text-white font-medium text-lg hover:border-white hover:bg-white/10 transition-all duration-300"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
+
+          {/* --- PROFILE IMAGE (Cool Rotating Ring Design) --- */}
+          <div className="relative group">
+             {/* Rotating Gradient Ring */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-spin-slow"></div>
+            
+            <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[#12123e] shadow-2xl">
+               <img 
+                src="/images/myimage.JPEG" 
+                alt="Waheed" 
+                className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110" 
+               />
+            </div>
+          </div>
+        </section>
+
+
+        {/* --- DIVIDER --- */}
+        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-50 my-10"></div>
+
+
+        {/* --- SECTIONS --- */}
+        <div className="space-y-24 pb-20">
+          <section id="about" className="px-2">
+            <Experience />
+          </section>
+
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-50"></div>
+
+          <section id="education" className="px-2">
+            <Education />
+          </section>
+
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-gray-800 to-transparent opacity-50"></div>
+
+          <section id="projects" className="px-2">
+            <Projects />
+          </section>
         </div>
 
-        {/* Right Image */}
-        <div className="w-72 h-72 relative image-container">
-          <img src="/images/BG.png" alt="BG" className="bg-img" />
-          <img src="/images/myimage.JPEG" alt="Waheed" className="my-img" />
-        </div>
-      </section>
-
-      <hr className="mx-auto w-[85%] border-[#9c97f1]" />
-
-      {/* About Section */}
-      <section id="about" className="snap-start h-screen overflow-y-auto px-6 md:px-12 py-10">
-        <Experience />
-      </section>
-
-      <hr className="mx-auto w-[85%] border-[#9c97f1]" />
-
-      {/* Education Section */}
-      <section id="education" className="snap-start h-screen overflow-y-auto px-6 md:px-12 py-10">
-        <Education />
-      </section>
-
-      <hr className="mx-auto w-[85%] border-[#9c97f1]" />
-
-      {/* Projects Section */}
-      <section id="projects" className="snap-start h-screen overflow-y-auto px-6 md:px-12 py-10">
-        <Projects />
-      </section>
-
-      <hr className="mx-auto w-[85%] border-[#9c97f1]" />
-
-      {/* Footer Section */}
-      <section id="contact" className="px-6 md:px-12 py-10 snap-start">
-        <Footer />
-      </section>
+        <section id="contact">
+          <Footer />
+        </section>
+      </div>
     </main>
   );
 }
-
 
 export default function App() {
   return (
@@ -136,6 +159,7 @@ export default function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/blogs" element={<Blogs />} />
       <Route path="/blogs/:id" element={<BlogPost />} />
+      <Route path="/skills" element={<SkillsAndCertifications />} />
     </Routes>
   );
 }
