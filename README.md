@@ -1,109 +1,124 @@
-# 💼 Waheed’s Portfolio
+<div align="center">
 
-A modern, responsive personal portfolio built with **React** and **Tailwind CSS**, designed to showcase my projects, blogs, and learning journey across **Data Science, Machine Learning, and Web Development**.
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=260&section=header&text=Waheed's%20Portfolio&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Data%20Science%20•%20Machine%20Learning%20•%20Web%20Development&descAlignY=55&descAlign=50" alt="Waheed's Portfolio Header" />
 
-🌐 **Live Demo**: https://waheeds-portfolio.netlify.app/  
-🔗 **Repository**: https://github.com/Syed-Waheed/my-portfolio
+  <br />
 
----
+  <p>
+    <a href="https://waheeds-portfolio.netlify.app/">
+      <img src="https://img.shields.io/badge/Live_Demo-FFD700?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Live Demo" />
+    </a>
+    <a href="https://www.linkedin.com/in/syed-abdul-waheed/">
+      <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
+    </a>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  </p>
 
-## 📸 Preview
-
-### Portfolio – Main Sections
-![Portfolio Page 1](screenshots/page1-v2.png)
-
-### About Me
-![Portfolio Page 2](screenshots/page2-v2.png)
-###  Projects
-![Portfolio Page 2](screenshots/page3-v2.png)
----
-
-## ✨ Overview
-
-This portfolio is not just a static website. It reflects how I think about:
-- structuring real projects,
-- presenting technical work clearly,
-- and documenting learning through blogs.
-
-It combines clean UI with practical engineering decisions, routing, and content organization.
+  <h3>🚀 A Next-Gen Portfolio for the Data-Driven Era</h3>
+  
+  <p align="center">
+    <i>"Turning data into insights and code into reality."</i>
+  </p>
+</div>
 
 ---
 
-## 🚀 Features
+## 💎 Overview
 
-- ⚡ Clean landing section with smooth navigation
-- 📁 Dedicated **Projects** section with GitHub redirection
-- 📝 **Blogs system** with routing and individual blog pages
-- 🎓 Education and learning timeline
-- 🎨 Modern UI using Tailwind CSS
-- 📱 Fully responsive across devices
-- 🧭 Client-side routing with React Router
+This is **not just a static website**. It is a dynamic representation of my journey as a **Data Science Enthusiast** and **Developer**. 
 
----
+Built with **React** and **Tailwind CSS**, this portfolio combines high-performance engineering with aesthetic design to showcase:
+* **Real-world ML/DS Projects** (LSTM, Random Forest, EDA)
+* **Technical Blogging** capabilities
+* **Professional Timeline** & Education
+* **Verified Certifications**
 
-## 🧠 Tech Stack
-
-- **Frontend**: React, Tailwind CSS  
-- **Routing**: React Router  
-- **Styling**: Tailwind utility-first design  
-- **Version Control**: Git & GitHub  
-- **Deployment**: Netlify  
+It reflects my philosophy: **Structure, Clarity, and Impact.**
 
 ---
 
-## 📌 Featured Work
+## 📸 Visual Tour
 
-Some of the key projects highlighted in this portfolio:
-
-- 📈 **Stock Market Prediction using LSTM**  
-  Time-series forecasting using deep learning with an interactive Streamlit app.
-
-- 🧠 **AI Data Analyst Agent**  
-  Chat-with-your-data agent using LLMs, LangChain, and local inference.
-
-- 📊 **Customer Churn Prediction (ChurnShield)**  
-  End-to-end ML pipeline with preprocessing, SMOTE, and Random Forest.
-
-- ₿ **Crypto Trading Behavior Analysis**  
-  Quantitative analysis combining trading data with market sentiment.
-
-- 🏏 **ICC World Cup 2023 – EDA**  
-  Insight-driven exploratory analysis with visual storytelling.
-
-- 🌐 **OpenVoice – Social Media Platform**  
-  Twitter-inspired platform with authentication, feeds, and theming.
-
----
-
-## 📝 Blogs
-
-The portfolio includes a **Blogs section** where I document:
-- my learning journey,
-- technical reflections,
-- and mistakes that shaped my understanding.
-
-Current blog:
-- **From Confusion to Clarity: My Journey into Data Science & Machine Learning**
-
-This section is designed to grow as I continue learning.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>🏠 Landing Page</b></td>
+      <td align="center"><b>👨‍💻 About & Timeline</b></td>
+    </tr>
+    <tr>
+      <td><img src="screenshots/page1-v2.png" width="400" alt="Home Page" /></td>
+      <td><img src="screenshots/page2-v2.png" width="400" alt="About Page" /></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2"><b>🚀 Projects Section</b></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2"><img src="screenshots/page3-v2.png" width="800" alt="Projects Page" /></td>
+    </tr>
+  </table>
+</div>
 
 ---
 
-## 🛠️ Local Setup
+## ⚡ Key Features
 
-bash
-git clone https://github.com/Syed-Waheed/my-portfolio.git
+- **🎨 Modern UI/UX:** Dark-themed, glassmorphic design with Tailwind CSS.
+- **🧭 Client-Side Routing:** Seamless navigation using `react-router-dom`.
+- **📱 Fully Responsive:** Optimized for Mobile, Tablet, and Desktop.
+- **📂 Component Architecture:** Modular React file structure for scalability.
+- **📝 Dynamic Blog System:** Dedicated reading section for technical articles.
+- **🎓 Smart Navigation:** Sticky headers and smooth scrolling sections.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Frontend** | ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react) ![Tailwind](https://img.shields.io/badge/-Tailwind-black?style=flat-square&logo=tailwindcss) ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript) |
+| **Libraries** | `Typed.js`, `React Router`, `Framer Motion` (Concept) |
+| **Tools** | ![Git](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git) ![VS Code](https://img.shields.io/badge/-VS_Code-black?style=flat-square&logo=visual-studio-code) |
+| **Deployment** | ![Netlify](https://img.shields.io/badge/-Netlify-black?style=flat-square&logo=netlify) |
+
+---
+
+## 📌 Featured Projects
+
+A glimpse into the technical depth showcased in this portfolio:
+
+| Project | Domain | Description |
+| :--- | :--- | :--- |
+| **Stock Market Prediction** | 📈 Deep Learning | Time-series forecasting using **LSTM** with an interactive **Streamlit** dashboard. |
+| **AI Data Analyst Agent** | 🧠 GenAI / LLM | Chat-with-your-data agent using **LangChain** and local **Ollama** inference. |
+| **ChurnShield** | 📊 Machine Learning | End-to-end churn prediction pipeline using **SMOTE** and **Random Forest**. |
+| **Crypto Analysis** | ₿ Quant Finance | Merging trading data with market sentiment (Fear & Greed Index). |
+| **ICC World Cup EDA** | 🏏 Data Viz | Comprehensive exploratory analysis with 14+ insight-driven visuals. |
+| **OpenVoice** | 🌐 Full Stack | Twitter-inspired social platform with **Supabase** authentication. |
+
+---
+
+## 📝 Latest Blogs
+
+I document my learning process to solidify concepts. Recent highlight:
+
+> **From Confusion to Clarity: My Journey into Data Science & Machine Learning** > *A deep dive into overcoming the initial hurdles of ML, understanding overfitting, and moving from tutorials to real projects.*
+
+---
+
+## ⚙️ Local Setup
+
+Want to run this locally? Follow these steps:
+
+```bash
+# 1. Clone the repository
+git clone [https://github.com/Syed-Waheed/my-portfolio.git](https://github.com/Syed-Waheed/my-portfolio.git)
+
+# 2. Navigate to the project directory
 cd my-portfolio
+
+# 3. Install dependencies
 npm install
-npm run dev 
-----
 
-
-### 👤 Author
-
-- Syed Abdul Waheed
-- Data Science Enthusiast | Python Developer | Automation Explorer
-- 📬 Connect: LinkedIn (https://www.linkedin.com/in/syed-abdul-waheed/)
-- 🐙 GitHub: waheed24-03
-----
-
+# 4. Start the development server
+npm run dev
